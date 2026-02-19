@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/portafolio_style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Barra de Navegación e Iconos -->
+    <header> <!-- Parte superior de la pagina web -->
+        <nav>
+            <a href="#">
+                <img src="img/folder.png" alt="icono de carpeta" class="logo">
+                <h3 class="logo_text">Axel's Portafolio</h3>
+            </a>
+            <ul><!-- Elemento de barra de navegacion -->
+                <li class="nav_li"><a href="#proyect">My projects</a></li>
+                <li class="nav_li"><a href="#contact">About me</a></li>
+                <li class="nav_li"><a href="#social">Social Media</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>  <!-- parte media de la pagina web -->
+        <section class="nav_back"></section><!-- Parte solida del navbar debido a que el navbar es fixed -->
+        <section id="proyect" class="my_proyects_section"><!-- Seccion 1: Mis proyectos -->
+
+                <div class="proyect_info">
+                <div><h3>Cisco Network <span style="color: #a70505; font-style: italic;">Routing</span></h3></div>
+                <div><p>Router and switch configuration and interconnection: Remote access via SSH, access protocols (ACL),
+                    VLANs and setting up HTML servers with Ubuntu Server.<br>Source: <a href="https://docs.google.com/document/d/1hb1GLreLba93xjtZTUcudoG0U6hagg-HEBerOMqU9ME/edit?usp=sharing" target="_blank">www.docs.google.com...</a></p></div>
+                <img class="img_section" src="img/redes.webp" alt="Practica en laboratorio de redes">
+                </div>
+
+                <div class="proyect_info">
+                <div><h3>Figma mobile prototype <span style="color: #e9e62c; font-style: italic;">prototype</span></h3></div>
+                <div><p>Creation of an app prototype that includes a monochromatic color palette based on color psychology, visual hierarchy, fluid animations, continuous and comfortable app flow,
+                     language in accordance with requirements and ethical considerations.<br>Source: <a href="https://www.figma.com/design/ToFShKoEfc4059qR5OIQIh/Aim-Doin-?node-id=180-453&t=K1tBGbRSEnxQXjMZ-1" target="_blank">www.figma.com...</a></p></div>
+                <img class="img_section" src="img/figma.png" alt="Prototipo de una app en figma">
+                </div>
+ 
+                <div class="proyect_info">
+                <div><h3>Point of Sale in <span style="color: #0556a7; font-style: italic;">Python</span></h3></div>
+                <div><p>Point of sale with interactive visual elements, which manages product sales, provides receipts with a purchase summary,
+                     has the ability to replenish inventory, is programmed to avoid logical errors, and has a database where the information is stored (MySQL).<br>Source: <a href="https://github.com/MishiroDreams/organos.git" target="_blank">GitHub</a></p></div>
+                <img class="img_section" src="img/tienda.png" alt="programa informatico">
+                </div>
+                 
+        </section>
+        <section id="contact" class="contact_section"><!-- Seccion 2: Contacto e información de mí -->
+            <img src="img/me_contacto.png" class="yo" alt="Foto mia">
+            <div class="contact_info"><!-- Contenedores "contact_info" para guardar información dentro de la seccion 2 -->
+                <div><h3>Hi, I'm <span style="color: #0540a7; font-style: italic;">Axel Abarca</span></h3></div>
+                <div><p>Software Student at UNIPOLI</p></div>
+                <img class="img_section" src="img/unipoli.webp" alt="Estudiantes De la Universidad">
+            </div>
+            <div class="contact_info"><!-- Segundo contenedor -->
+                <div><h3>About me</h3></div>
+                <p>I am a responsible, optimistic, yet grounded person. I am highly motivated to improve and grow professionally, and I enjoy finding ways to optimize and automate processes at my workplace.</p>
+                <p>I am currently studying Information Technology and Digital Innovation, and I am looking to establish myself as a full-stack multi-platform developer.</p>
+
+            </div>
+            <div class="contact_info"><!-- Tercer contenedor -->
+                <div><h3>Information</h3></div>
+                <p>Age: 21 <br>Gender: Male <br>Country: México <br>City: Durango</p>
+                <div><p>I hope you find this page pleasing to your eye.</p></div>
+                <img class="img_section" src="img/yo2.webp" alt="Otra fotografía mía">
+            </div>
+        </section>
+            <!-- seccion 3: SOCIAL MEDIA -->
+        <section id="social" class="social_media_section">
+            <h2>Social Media</h2>
+            
+            <div class="social_links_container">
+                <!-- GitHub con imagen PNG -->
+                <a href="https://github.com/MishiroDreams" target="_blank" class="social_link">
+                    <img src="img/github.png" alt="GitHub" style="width:60px; height:60px; box-shadow:none; margin-bottom:10px;">
+                    <span>GitHub</span>
+                </a>
+                
+                <!-- WhatsApp con imagen PNG -->
+                <a href="https://wa.me/5216183648687" target="_blank" class="social_link">
+                    <img src="img/whatsapp.png" alt="WhatsApp" style="width:60px; height:60px; box-shadow:none; margin-bottom:10px;">
+                    <span>WhatsApp</span>
+                </a>
+                
+                <!-- Instagram con imagen PNG -->
+                <a href="https://www.instagram.com/axel.aa.g/" target="_blank" class="social_link">
+                    <img src="img/instagram.png" alt="Instagram" style="width:60px; height:60px; box-shadow:none; margin-bottom:10px;">
+                    <span>Instagram</span>
+                </a>
+                
+                <!-- Gmail con imagen PNG -->
+                <a href="mailto:axel.abarca.itid@unipolidgo.edu.mx" class="social_link">
+                    <img src="img/gmail.png" alt="Gmail" style="width:60px; height:60px; box-shadow:none; margin-bottom:10px;">
+                    <span>Gmail</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer_content">
+            <!-- Copyright -->
+            <div class="footer_copyright">
+                &copy; 2026 Axel Abarca. Todos los derechos reservados.
+            </div>
+            
+            <!-- Iconos sociales del footer-->
+            <div class="footer_social">
+                <a href="https://github.com/MishiroDreams" target="_blank" class="social_link">
+                    <img src="img/github.png" alt="GitHub" style="width:30px; height:30px; box-shadow:none;">
+                </a>
+                <a href="https://wa.me/5216183648687" target="_blank" class="social_link">
+                    <img src="img/whatsapp.png" alt="WhatsApp" style="width:30px; height:30px; box-shadow:none;">
+                </a>
+                <a href="https://www.instagram.com/axel.aa.g/" target="_blank" class="social_link">
+                    <img src="img/instagram.png" alt="Instagram" style="width:30px; height:30px; box-shadow:none;">
+                </a>
+                <a href="mailto:axel.abarca.itid@unipolidgo.edu.mx" class="social_link">
+                    <img src="img/gmail.png" alt="Gmail" style="width:30px; height:30px; box-shadow:none;">
+                </a>
+            </div>
+        </div>
+        
+        <!-- Botón volver arriba -->
+        <div class="back_to_top">
+            <a href="#">Volver arriba</a>
+        </div>
+    </footer>

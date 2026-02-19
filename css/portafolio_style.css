@@ -1,0 +1,245 @@
+/* Reset básico: elimina márgenes por defecto y establece box-sizing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos base: tipografía y color de fondo del documento */
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: #dcebaf;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Encabezados secundarios: tamaño y sombra para h3 */
+h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 200;
+    text-shadow: 4px 4px 4px #353b3b56;
+}
+/* Imágenes globales: sombra por defecto para imágenes */
+img{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+/* Enlaces: estilo por estado (normal, visited, hover, active) */
+a { color: rgb(0, 0, 0); text-decoration: none; }
+a:visited { color: rgb(0, 0, 0); }
+a:hover { color: rgb(139, 18, 18); text-decoration: underline; }
+a:active { color: rgb(255, 255, 255); }
+
+/* Barra de navegación: fija en la parte superior con fondo y sombra */
+nav{
+    position: fixed;
+    background-color: #c95c7a;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+/* Lista de navegación: alineada a la derecha */
+ul{
+    text-align: right;
+    margin: 1vw 0 0 0;
+}
+/* Elementos de la nav: espaciado y separación entre enlaces */
+.nav_li{
+    padding-right: 50px;
+    border-right: 2px solid rgb(40, 34, 21);
+    display: inline-block;
+    margin: 10px 3vh 0px 3vh;
+    font-weight: 500;
+}
+.logo{
+    /* Logo: posición fija para permanecer visible */
+    position: fixed;
+    height: auto;
+    width: 100px;
+    transform: translate(0, -15px);
+    box-shadow: none;
+}
+.logo_text{
+    /* Texto del logo: ajustado con transform para alineación */
+    position: fixed;
+    transform: translate(90px, 20px);
+}
+.nav_back{
+    /* Espacio de fondo de la nav para evitar solapamientos */
+    width: 100%;
+    height: 70px;    
+}
+
+/* Secciones principales: estilo común para contenedores <section> */
+section{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    gap: 4vh;
+    padding-top: 70px;
+    padding-right: 3vh;
+    align-items: flex-start;
+}
+.my_proyects_section{
+    /* Sección de proyectos: tamaño, márgenes y color */
+    height: 600px;
+    width: 90%;
+    margin: 0 auto;
+    padding-right: 10vh;
+    padding-left: 10vh;
+    background-color: #de9153; 
+}
+.proyect_info{
+    /* Información de cada proyecto: alineación de texto */
+    margin: 0 0 0 0;
+    text-align: justify;
+}
+.contact_section{
+    /* Sección de contacto: área principal y color distintivo */
+    height: 600px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #d6d644;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.yo{
+    /* Foto personal: tamaño y bordes redondeados */
+    display: block;
+    margin: 10px;
+    height: 480px;
+    width: auto;
+    border-radius: 10%;
+}
+.contact_info{
+    /* Texto de contacto: justificado para lectura */
+    margin: 0 0 0 0;
+    text-align: justify;
+}
+.img_section{
+    /* Subcontenedor de imágenes: tamaño y radio */
+    margin-top: 20px;
+    width: auto;
+    height: 200px;
+    border-radius: 10%;
+}
+
+
+/* SECCIÓN SOCIAL MEDIA */
+.social_media_section{
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #14888b, #0e5f61);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.social_media_section h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+
+.social_links_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.social_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.social_link:hover {
+    transform: translateY(-5px);
+    color: white;
+    text-decoration: none;
+}
+
+.social_link i {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.social_link span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.social_link.email_link i {
+    color: white;
+}
+
+/* FOOTER */
+footer{
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(to right, #b38b9d, #d2a5b2);
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+.footer_copyright {
+    font-size: 16px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.footer_social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer_social .social_link i {
+    font-size: 30px;
+    color: #2c3e50;
+}
+
+.footer_social .social_link:hover i {
+    color: #a70505;
+    transform: translateY(-3px);
+}
+
+.back_to_top a {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.back_to_top a:hover {
+    background-color: #a70505;
+    color: white;
+    text-decoration: none;
+}
